@@ -2,11 +2,15 @@
 
 A tiny C++ in-memory cache system with Least recently Used algorithm as a python shared-object library !
 
-## How to install
 
-To install the pyhon lib, just hit :
+## To build and deploy the lib on pypi
+
+You just have to run these bash files :
 ```shell
-pip3 install cacho
+# cmake build
+sh ./shells/build.sh
+# building the wheel
+sh ./shells/build_whl.sh
 ```
 
 ## How to use it
@@ -22,19 +26,6 @@ if c.exists("key1"):
     # And get it
     print(c.get("key1"))
 
-```
-
-## To build and deploy the lib on pypi
-
-You just have to run these bash files :
-```shell
-# cmake build
-sh ./shells/build.sh
-# building the wheel
-sh ./shells/build_whl.sh
-
-# And to deploy on Pypi :
-sh ./shells/pypi_deploy.sh
 ```
 
 ## LICENSE
