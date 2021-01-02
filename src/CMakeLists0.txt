@@ -1,0 +1,27 @@
+cmake_minimum_required(VERSION 3.12)
+
+project(cacho)
+
+add_definitions("-std=c++11")
+find_package(Boost COMPONENTS REQUIRED)
+
+include("./build/conanbuildinfo.cmake")
+conan_basic_setup()
+
+
+file(
+  GLOB
+  headers
+  *.hpp
+)
+
+# To build an eecutable
+add_executable(${PROJECT_NAME}
+    module.cpp
+    src/funcs.cpp)
+
+target_include_directories(${PROJECT_NAME} PRIVATE ${Boost_INCLUDE_DIRS})
+target_link_libraries(${PROJECT_NAME} ${Boost_LIBRARIES} ${CONAN_LIBS})
+
+set_target_properties(${PROJECT_NAME} PROPERTIES PREFIX "")
+
