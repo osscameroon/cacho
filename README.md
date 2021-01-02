@@ -1,6 +1,6 @@
 # CACHO
 
-A tiny C++ in-memory cache system with Least recently Used algorithm !
+A tiny C++ in-memory cache system with Least recently Used algorithm as a python shared-object library!
 
 ## How to install
 
@@ -22,6 +22,19 @@ if c.exists("key1"):
     # And get it
     print(c.get("key1"))
 
+```
+
+## To build the lib
+
+You just have to run these bash files :
+```shell
+sh ./shells/build.sh
+sh ./shells/build_whl.sh
+```
+
+And to deploy on Pypi :
+```shell
+sh ./pypi_deploy.sh
 ```
 
 ## LICENSE
