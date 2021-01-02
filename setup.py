@@ -6,10 +6,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='cacho',
-    version='0.0.2',
-    package_data={
-        'cacho': ['./build/lib/cacho.so'],
-    },
+    version='0.0.3',
     author="Sanix-darker",
     author_email="s4nixd@gmail.com",
     description="A tiny C++ in-memory cache system with Least recently Used algorithm!",
