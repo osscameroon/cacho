@@ -8,7 +8,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [manylinux, windows-2019, macOS-10.15]
+        os: [manylinux-x86_64, windows-2019, macOS-10.15]
 
     steps:
       - uses: actions/checkout@v2
