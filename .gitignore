@@ -3,4 +3,4 @@ build
 .history
 .idea
 dist
-cacho*
+cacho.egg*
