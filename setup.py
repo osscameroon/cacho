@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='cacho',
-    version='0.0.4',
+    version='0.0.5',
     author="Sanix-darker",
     author_email="s4nixd@gmail.com",
     description="A tiny C++ in-memory cache system with Least recently Used algorithm!",
