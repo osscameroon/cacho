@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='cacho',
-    version='0.0.3',
+    version='0.0.4',
     author="Sanix-darker",
     author_email="s4nixd@gmail.com",
     description="A tiny C++ in-memory cache system with Least recently Used algorithm!",
@@ -14,6 +14,9 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/osscameroon/cacho",
     packages=find_packages(),
+    package_data={
+        'cacho': ['./build/lib/cacho.so'],
+    },
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
