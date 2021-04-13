@@ -2,13 +2,16 @@
 
 A tiny C++ in-memory cache system with Least recently Used algorithm as a python shared-object library !
 
-
 ## To build and deploy the lib on pypi
 
 You just have to run these bash files :
 ```shell
+#clone the repo
+git clone https://github.com/osscameroon/cacho
+
 # cmake build
 sh ./shells/build.sh
+
 # building the wheel
 sh ./shells/build_whl.sh
 ```
@@ -25,9 +28,9 @@ c.set("key1", "value1")
 if c.exists("key1"):
     # And get it
     print(c.get("key1"))
-
 ```
 
 ## LICENSE
 
 - [MIT](./LICENSE.txt)
+
