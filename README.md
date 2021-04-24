@@ -16,7 +16,7 @@ sh ./shells/build.sh
 sh ./shells/build_whl.sh
 ```
 
-## How to use it
+## How to start
 
 ```python
 import cacho as c
